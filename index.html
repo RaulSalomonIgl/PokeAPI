@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+  <div class="search hidden" id="active-search">
+    <input type="text" placeholder="Enter pokemon name..." id="pokeName" name="pokeName" class="txtPokename">
+    <button onclick="fetchPokemon()" class="btn"><img src="./assets/image/pokeball.png" alt="search-pokeball" height="50"></button>
+  </div>
+  <button onclick="search()" class="btn" id="btn-active"><img src="./assets/image/pokeball.png" alt="search-pokeball" height="50"></button>
+  
+  
+  <div class="card-container">
+
+    <div class="pokemon-container">
+  
+      <div class="power-level">
+        No° <span id="pId">#514</span>
+        <div class="pokemon-snap">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/390666/gengar-big.png" id="pokeImg"/>
+        </div>
+        <!-- !.pokemon-snap -->
+        <div class="half-circle"></div>
+      </div>
+      <!-- !.power-level -->
+  
+      <div class="poke-card">
+  
+        <div class="name">
+          <h1 id="pName">Gengar</h1>
+          <div class="hp" id="hp">
+            HP 66/66
+          </div>
+        </div>
+  
+        <ul class="stats">
+          <li><div id="types">Ghost / Poison</div><span>Type</span></li>
+          <li><div id="weight">40.5kg</div><span>Weight</span></li>
+          <li><div id="height">1.5m</div><span>Height</span></li>
+        </ul>
+  
+        <div class="info">
+  
+          <div class="dusty-candy">
+            <div class="dust">
+              <i></i> 10514<br />
+              <span>Stardust</span>
+            </div>
+            <div class="candy">
+              <i></i> 50<br />
+              <span id="candys">Gengar Candy</span>
+            </div>
+          </div>
+  
+          <div class="power-up">
+            <div class="button">Power Up</div>
+            <i class="stardust"></i> 1000
+            <i class="candy"></i> 1
+          </div>
+  
+        </div>
+        <!-- !.info -->
+  
+        <ul class="abilities">
+
+          <li>
+            Attack<br />
+            <span class="power" id="attack">15</span>
+            <ul class="super" id="power0">
+              <li></li>
+            </ul>
+          </li>
+
+          <li>
+            Defense<br />
+            <span class="power" id="defense">60</span>
+            <ul class="super" id="power1">
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+
+          <li>
+            Special Attack<br />
+            <span class="power" id="special-attack">15</span>
+            <ul class="super" id="power2">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+
+          <li>
+            Special Defense<br />
+            <span class="power" id="special-defense">60</span>
+            <ul class="super" id="power3">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+
+          <li>
+            Speed<br />
+            <span class="power" id="speed">15</span>
+            <ul class="super" id="power4">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+          
+
+        </ul> <!-- !.abilities -->
+        
+        <div class="caught">
+          Moves
+          <ul class="stats">
+          
+            <li>
+              <div id="atq0">Lick</div>
+            </li>
+  
+            <li>
+              <div id="atq1">Shadow ball</div>
+            </li>
+  
+            <li>
+              <div id="atq2">Misfortune</div>
+            </li>
+  
+            <li>
+              <div id="atq3">Shadow Claw</div>
+            </li>
+  
+          </ul>
+        </div>
+
+        
+        
+        <div class="transfer">
+          <button class="button">Transfer</button>          
+        </div>
+  
+      </div>
+      <!-- !.poke-card -->
+  
+    </div>
+    <!-- !.pokemon-container -->
+  
+  </div>
+  <!-- !.card-container -->
+  
+</body>
+<script src="./assets/js/pokedex.js"></script>
+</html>
